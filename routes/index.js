@@ -1,10 +1,7 @@
 const express = require('express');
 const router = express.Router();
-// const note = require('../db/note');
+const apiRoutes = require('./api/index')
 
-// router.get("/", (req, res) => {
-//     console.log('working')
-//     res.send('')
-// })
+router.use('/api', apiRoutes);
 
 module.exports = router;
