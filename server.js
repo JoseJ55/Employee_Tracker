@@ -1,4 +1,4 @@
-// const inquirer = require("inquirer");
+const inquirer = require("inquirer");
 // const sql = require("mysql");
 const express = require('express');
 const routes = require('./routes/index');
@@ -17,3 +17,8 @@ app.use(routes);
 sequelize.sync({force: false}).then(()=>{
     app.listen(PORT, () => console.log(`Now listening on port ${PORT}!`))
 }); 
+
+// Comment for important things
+//-----------------------------------
+// Need to work on the inquirer part next.
+//-----------------------------
